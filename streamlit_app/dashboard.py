@@ -1,7 +1,8 @@
 """Credit Risk Engine — Interactive Streamlit Dashboard."""
 
 import os
-import sys, json
+import sys
+import json
 from pathlib import Path
 
 import streamlit as st

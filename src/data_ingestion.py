@@ -1,10 +1,9 @@
 """Data Ingestion Module for Credit Risk Engine."""
 
 import pandas as pd
-import numpy as np
 from pathlib import Path
 import logging
-from typing import Tuple, Optional
+from typing import Tuple
 
 logger = logging.getLogger(__name__)
 

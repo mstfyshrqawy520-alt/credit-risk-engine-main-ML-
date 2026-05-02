@@ -1,6 +1,5 @@
 """Fairness Analysis — EU AI Act & ECOA compliant metrics."""
 
-import numpy as np
 from sklearn.metrics import confusion_matrix
 import logging
 

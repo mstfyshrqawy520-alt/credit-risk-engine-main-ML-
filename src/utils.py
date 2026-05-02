@@ -2,9 +2,8 @@
 
 import numpy as np
 import pandas as pd
-from typing import Dict, List, Tuple, Any
+from typing import Dict, List
 import logging
-from sklearn.preprocessing import StandardScaler, LabelEncoder
 import pickle
 
 # Configure logging
@@ -77,7 +76,6 @@ class MetricsCalculator:
             recall_score,
             f1_score,
             roc_auc_score,
-            confusion_matrix,
         )
 
         metrics = {

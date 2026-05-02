@@ -1,10 +1,13 @@
 """FastAPI application — Credit Risk Engine REST API."""
 
-import sys, json, logging, os, time
+import sys
+import json
+import logging
+import os
+import time
 from pathlib import Path
 from typing import Optional
 
-import numpy as np
 import pandas as pd
 from fastapi import FastAPI, HTTPException, Depends, Response, Security
 from fastapi.middleware.cors import CORSMiddleware

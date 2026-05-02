@@ -1,6 +1,9 @@
 """Main Training Script — run from project root."""
 
-import sys, json, logging, yaml
+import sys
+import json
+import logging
+import yaml
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
@@ -19,8 +22,6 @@ logging.basicConfig(
 logger = logging.getLogger("train")
 
 # ─── Imports ─────────────────────────────────────────────────────────────────
-import numpy as np
-import pandas as pd
 from sklearn.model_selection import train_test_split
 
 from data.generate_data import generate_credit_data
@@ -88,7 +89,7 @@ def main():
         output_dir=str(model_dir),
         experiment=config["mlflow"]["experiment_name"],
     )
-    results = trainer.train_all(X_train, y_train, X_test, y_test)
+    trainer.train_all(X_train, y_train, X_test, y_test)
 
     # ── Fairness ─────────────────────────────────────────────────────────────
     y_pred = trainer.best_model.predict(X_test)

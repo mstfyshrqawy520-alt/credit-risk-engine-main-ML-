@@ -1,6 +1,9 @@
 """Unit tests for Credit Risk Engine pipeline."""
 
-import sys, pytest, numpy as np, pandas as pd
+import sys
+import pytest
+import numpy as np
+import pandas as pd
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
